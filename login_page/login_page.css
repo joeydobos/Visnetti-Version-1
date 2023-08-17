@@ -1,0 +1,293 @@
+
+	header {
+		background-color: #181818;
+		height: 48px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	
+	header svg {
+		display: block;
+		width: 156px;
+		margin: 0 auto;
+		z-index: 2;
+	}
+	
+	.header_box {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+	}
+
+	.Menu-Container {
+		margin-right: 0;
+		height:48px;
+		width: 48px;
+		z-index: 2;
+	}
+	
+	.Menu {
+		height: 12px;
+		width: 26px;
+		margin-left: 11px;
+		margin-top: 18px;
+	}
+	
+	.bar1, .bar2 {
+		height: 2px;
+		width: 26px;
+		margin: 0 0 8px;
+		background-color: #F9F9F9;
+		transition: 0.4s;
+	}
+	
+	.change .bar1{
+		transform: translate(0, 5px) rotate(-45deg);
+	}
+	
+	.change .bar2{
+		transform: translate(0, -5px) rotate(45deg);
+	}
+	
+	.overlay {
+		height: 100%;
+		width: 0%;
+		transition: 0.4s;
+		z-index: 1;
+		bottom: 0;
+		right: 0;
+		background-color: #181818;
+		opacity : 0.95;
+		position: fixed;
+		overflow-x: hidden;
+	}
+	
+	.overlay-content {
+		display: block;
+		text-align: right;
+		white-space: nowrap;
+		
+	}
+	
+	.overlay-content a {
+		font-size: 36px;
+		height: 48px;
+		text-decoration: none;
+	}
+	
+	.overlay-content svg {
+		width: 36px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	
+	.overlay_icons {
+		display: inline-block;
+		vertical-align: middle;
+		padding-bottom: 10px;
+		
+	}
+	
+	.spacer {
+		margin-left: 0;
+		height:48px;
+		width: 48px;
+	}
+	
+	.Footer_box {
+		width: 100%;
+		background-color: #181818;
+		margin-top: 100%;
+	}
+	
+	.Footer_Logo svg {
+		width: 156px;
+		margin-top: 5px;
+		margin-right: 10px;
+	}
+	
+	.socials svg{
+		width: 36px;
+		margin-left: 5px;
+		margin-bottom: 5px;
+	}
+	
+	.Events_bar {
+		color: #F9F9F9;
+		font-size: 18px;
+		border: none;
+		background-color: #E55140;
+		height: 36px;
+		width: 100%;
+	}
+	
+	.line_title {
+		background-color: #E55140;
+		height: 1px;
+		width: 250px;
+		margin: 0 auto 0;
+	}
+	
+	.line_body {
+		background-color: #E55140;
+		height: 1px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.line_overlay {
+		background-color: #E55140;
+		height: 1px;
+		width: 75%;
+		float: right;
+	}
+	
+	.line_footer {
+		background-color: #E55140;
+		height: 1px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	.register_button {
+		color: #F9F9F9;
+		font-size: 18px;
+		background-color: #E55140;
+		height: 24px;
+		width: 148px;
+		border-radius: 12px;
+		text-align: center;
+		margin: 10px auto;
+	}
+
+	.login_button {
+		color: #F9F9F9;
+		font-size: 18px;
+		background-color: #E55140;
+		height: 24px;
+		width: 90px;
+		border-radius: 12px;
+		text-align: center;
+		border: none;
+		margin: 10px auto;
+	}
+
+	.wrap {
+		text-align: center;
+		margin: 10px auto;
+	}
+	
+	.terms_text_box {
+		font-size: 12px;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		justify-content: center;
+		
+	}
+	
+	.terms_text {
+		width: 75%;
+		
+	}
+	
+	.Links {
+		margin-left: 6px;
+		margin-bottom: 5px;
+	}
+	
+	.divider a:before {
+		content: "|";
+		color: #E55140;
+	}
+	
+	.divider a:first-child:before {
+		content: "";
+	}
+	
+	/* need to change so that inputs are offset from left */
+	form input {
+		display: block;
+		width: calc(100% - 20px);
+		height: 32px;
+		margin: 0 10px 10px;
+		border-radius: 16px;
+		border: none;
+		filter: drop-shadow(1px 3px 3px #707070)
+	}
+	
+	.overlay input {
+		width: 75%;
+		height: 28px;
+		float: right;
+		border-radius: 21px;
+		border-color: #F9F9F9;
+		background-color: transparent;
+	}
+	
+	input[type="checkbox"] {
+		width: 18px;
+		accent-color: #E55140;
+		margin: 10px;
+		
+	}
+	
+	body {
+		font-family: Calibri;
+	}
+	
+	h1 {
+		font-size: 24px;
+		font-weight: normal;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 18px;
+		font-weight: normal;
+		margin: 10px 20px;
+	}
+	
+	h3 {
+		font-size: 14px;
+		font-weight: normal;
+		text-align: center;
+		width: 250px;
+		margin: 0 auto;
+	}
+	
+	h4 {
+		font-size: 12px;
+		margin: 0 20px 20px;
+	}
+	
+	h5 {
+		font-size: 16px;
+		font-weight: normal;
+		color: #F9F9F9;
+		margin: 5px;
+	}
+	
+	h6 {
+		font-size: 14px;
+		color: #F9F9F9;
+		margin: 6px
+	}
+	
+	p {
+		font-size: 12px;
+		width: 317px;
+		margin: 0 auto 5px;
+	}
+	
+	a {
+		font-size: 14px;
+		color: #F9F9F9;
+	}
+	
+*{
+	font-family: Calibri;
+}
